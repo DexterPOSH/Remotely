@@ -1,8 +1,8 @@
-﻿function Remotely
+function Remotely
 {
     param 
     (       
-        [Parameter(Mandatory, Position = 0)]
+        [Parameter(Mandatory = $true, Position = 0)]
         [String[]] $Nodes,
         
         [Parameter(Mandatory = $true, Position = 1)]
@@ -109,7 +109,7 @@ function CreateSessions
 {
     param
     (
-        [Parameter(Mandatory)]
+        [Parameter(Mandatory = $true)]
         [string[]] $Nodes,
 
         [Parameter()]
